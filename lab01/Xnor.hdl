@@ -1,0 +1,9 @@
+CHIP Xnor{
+
+    IN a,b;
+    OUT out;
+
+    PARTS:
+    Xor(a=a, b=b, out=aXorb);
+    Not(in=aXorb, out=out);
+}
